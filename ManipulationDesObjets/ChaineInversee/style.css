@@ -1,0 +1,51 @@
+body
+{
+    margin: 100px 25%;
+}
+fieldset
+{
+    border: 2px solid rgb(255, 151, 168);
+    border-radius: 10px;
+    text-align: center;
+}
+legend
+{
+    font-size: 19px;
+    color: white;
+    background-color: rgb(255, 151, 168);
+    width: 150px;
+    height: 30px;
+    padding-top: 8px;
+    border-radius: 15px 0;
+}
+.field
+{
+    margin: 20px 0;
+}
+.field input
+{
+    border: none;
+    border-bottom: 2px solid rgb(255, 151, 168);
+    outline: none;
+}
+#output
+{
+    color: gray;
+}
+.btn
+{
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(75, 44, 49);
+    background-color: rgb(255, 151, 168);
+    height: 45px;
+    width: 150px;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 1px 0 #00000073;
+}
+.btn:active
+{
+    background-color: rgb(255, 133, 154);
+    box-shadow: 0 0 1px 0 #00000073;
+}
