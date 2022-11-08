@@ -1,0 +1,26 @@
+/* Color palette */
+:root {
+    --Green: #008D36;
+    --white: #ffffff;
+    --Black: #181D27;
+}
+
+*
+{
+}
+
+.background-Top
+{
+    background-color: var(--Green);
+    height: 100px;
+    width: 100%;
+}
+.background-Top > h1 
+{
+    color: var(--white);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+    padding-top: 25px;
+}
