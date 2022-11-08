@@ -1,9 +1,9 @@
-# JavaScript Solutions 👨🏻‍💻
+# Langages de script Solutions 👨🏻‍💻
 
 A repository where you can find solutions for **Langages de script** (Cours exercices 📚, TPs 💻),
 solutions developed by students for students 👨🏻‍🎓👩🏻‍🎓.
 
-All "Support JS" and "Série des travaux pratiques" was created by prof **Mohammed AMEKSA** 👨🏽‍🏫
+All "Support" and "Série des travaux pratiques" was created by prof **Mohammed AMEKSA** 👨🏽‍🏫
 
 To test out the solutions: https://uuinc.github.io/JS-Solutions
 
