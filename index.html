@@ -1,45 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JavaScript - Solutions</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JavaScript - Solutions</title>
 
-    <link rel="stylesheet" href="src/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-</head>
-<body>
-    <div class="background-top">
-        <h1>
-            <img class="background-top-icon" src="src/assets/images/graduation-hat.png" alt="graduation hat"/>
-            JavaScript - Solutions
-        </h1>
-    </div>
-    
-    <ol>
-        <select class="form-select" aria-label="Select TP">
-            <option selected>Choisire quel TP</option>
-            <option value="1">TP1</option>
-            <option value="2">TP2</option>
-            <option value="3">TP3</option>
-          </select> 
-        <a href="supports/TP1/TP1.pdf" target="_blank">Support du TP1.pdf</a>
-        <a href="supports/TP1/Exercice1/index.html" target="_blank">
-            <li>Exercice 1</li>
-        </a>
-        <a href="supports/TP1/Exercice2/index.html" target="_blank">
-            <li>Exercice 2</li>
-        </a>
-        <a href="supports/TP1/Exercice3/index.html" target="_blank">
-            <li>Exercice 3</li>
-        </a>
-        <a href="supports/TP1/Exercice4/index.html" target="_blank">
-            <li>Exercice 4</li>
-        </a>
-    </ol>
+        <link rel="stylesheet" href="src/style.css" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    </head>
+    <body>
+        <div class="background-top">
+            <h1>
+                <img class="background-top-icon" src="src/assets/images/graduation-hat.png" alt="graduation hat" />
+                JavaScript - Solutions
+            </h1>
+        </div>
+        <div class="row mt-6">
+            <div class="col-md-12 col-12">
+                <!-- card  -->
+                <div class="card">
+                    <!-- card header  -->
+                    <div class="card-header bg-white py-4">
+                        <h4 class="mb-0">Liste</h4>
+                    </div>
+                    <!-- table  -->
+                    <div class="table-responsive">
+                        <table class="table text-nowrap mb-0">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>Exercices</th>
+                                    <th>Description</th>
+                                    <th>Developer</th>
+                                    <th>Date</th>
+                                    <th>Support</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="align-middle">
+                                        <div class="d-flex align-items-center">
+                                            <div>
+                                                <div class="icon-shape icon-md border p-4 rounded-1">
+                                                    <img src="assets/images/brand/dropbox-logo.svg" alt="" />
+                                                </div>
+                                            </div>
+                                            <div class="ms-3 lh-1">
+                                                <h5 class="mb-1"><a href="supports/TP1/Exercice1/index.html" class="text-inherit">Exercice 1 </a></h5>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="align-middle">TP1 Ex1 Solution...</td>
+                                    <td class="align-middle">
+                                      <button class="btn btn-primary">Yahya Lazrek</button>
+                                    </td>
+                                    <td class="align-middle">01/10/2022</td>
+                                    <td class="align-middle">
+                                      <button class="btn btn-primary">download</button>
+                                    </td>
+                                </tr>
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- card footer  -->
+                    <div class="card-footer bg-white text-center">
+                        <a href="#" class="link-primary">View All Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ol>
+            <select class="form-select" aria-label="Select TP">
+                <option selected>Choisire quel TP</option>
+                <option value="1">TP1</option>
+                <option value="2">TP2</option>
+                <option value="3">TP3</option>
+            </select>
+            <a href="supports/TP1/TP1.pdf" target="_blank">Support du TP1.pdf</a>
+            <a href="supports/TP1/Exercice1/index.html" target="_blank">
+                <li>Exercice 1</li>
+            </a>
+            <a href="supports/TP1/Exercice2/index.html" target="_blank">
+                <li>Exercice 2</li>
+            </a>
+            <a href="supports/TP1/Exercice3/index.html" target="_blank">
+                <li>Exercice 3</li>
+            </a>
+            <a href="supports/TP1/Exercice4/index.html" target="_blank">
+                <li>Exercice 4</li>
+            </a>
+        </ol>
 
-
-    <script src="src/index.js"></script>
-</body>
+        <script src="src/index.js"></script>
+    </body>
 </html>
