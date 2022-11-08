@@ -4,9 +4,6 @@
     --white: #ffffff;
     --Black: #181D27;
 }
-*
-{
-}
 .background-top
 {
     background-image: linear-gradient(var(--Green),
