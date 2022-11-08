@@ -4,23 +4,27 @@
     --white: #ffffff;
     --Black: #181D27;
 }
-
 *
 {
 }
-
-.background-Top
+.background-top
 {
-    background-color: var(--Green);
+    background-image: linear-gradient(var(--Green),
+        var(--Green), var(--Green), #016d2a);
     height: 100px;
     width: 100%;
 }
-.background-Top > h1 
+.background-top-icon
+{
+    width: 45px;
+    margin-right: 10px;
+}
+.background-top > h1 
 {
     color: var(--white);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: bold;
-    font-size: x-large;
+    font-size: xx-large;
     text-align: center;
     padding-top: 25px;
 }
