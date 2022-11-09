@@ -70,5 +70,15 @@ function LoadData(numberToShow) {
         });
 }
 
+function filterSelect() {
+    const option = document.getElementById("card-filter-select").value;
+    if (option === "none") {
+        document.getElementById("card-filter-show").style.visibility = "hidden";
+    } else {
+        document.getElementById("card-filter-show").style.visibility =
+            "visible";
+    }
+}
+
 //Initialize App
 LoadData(5);

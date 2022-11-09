@@ -27,14 +27,14 @@
                     <!-- card filter -->
                     <div class="card-filter">
 
-                        <select class="form-select" aria-label="Select TP">
-                            <option value="0">Select Option</option>
-                            <option value="1">TP1</option>
-                            <option value="2">TP2</option>
-                            <option value="3">TP3</option>
+                        <select id="card-filter-select" class="form-select" aria-label="Select TP" onchange="filterSelect()">
+                            <option value="none">Select Option</option>
+                            <option value="TP1">TP1</option>
+                            <option value="TP2">TP2</option>
+                            <option value="TP3">TP3</option>
                         </select>
                         
-                        <a id="card-show-support" class="btn btn-success" href="supports/TP1/TP1.pdf" target="_blank">show</a>
+                        <a id="card-filter-show" class="btn btn-success" href="supports/TP1/TP1.pdf" target="_blank" style="visibility: hidden;">show</a>
 
                     </div>
                     <!-- table  -->
