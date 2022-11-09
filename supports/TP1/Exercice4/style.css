@@ -1,0 +1,14 @@
+/* TP1 Excerice 4 */
+*
+{
+    text-align: center;
+}
+.BestWidth
+{
+    width: 30% !important;
+    margin: 0 auto;
+}
+input
+{
+    text-align: left;
+}

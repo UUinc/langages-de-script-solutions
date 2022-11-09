@@ -1,0 +1,40 @@
+/* Excercice 3 */
+.container
+{
+    background-color: black;
+    width: 80%;
+    height: 150px;
+    margin: auto;
+    border-radius: 15px;
+}
+.container-input
+{
+    width: 92%;
+    margin: auto;
+    padding-top: 40px;
+    text-align: center;
+}
+.container-result
+{
+    background-color: red;
+    width: 94%;
+    height: 36px;
+    margin: auto;
+    border-radius: 15px;
+    color: white;
+    text-align: center;
+}
+.bc
+{
+    border-radius: 10px;
+}
+.divide
+{
+    color: white;
+    background-color: rgb(126, 0, 0);
+    width: 62px;
+}
+#result
+{
+    padding-top: 6px;
+}
