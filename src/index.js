@@ -34,7 +34,7 @@ function addRecord(
         recordName +
         "</a> </h5> </div> </div> </td> <td class='align-middle'>" +
         description +
-        "</td> <td class='align-middle'> <a class='btn btn-success' href='" +
+        "</td> <td class='align-middle'> <a class='link link-success' href='" +
         developerUrl +
         "' target='_blank' > " +
         developerName +
@@ -47,7 +47,9 @@ function addRecord(
 }
 
 //number To Show less or equal 0 show all
-function LoadData(numberToShow) {
+function LoadData(numberToShow, filterType) {
+    //Empty Table
+    document.getElementById("table-data").innerHTML = "";
     //Fetch data.json
     fetch("src/data.json")
         .then((obj) => obj.json())
@@ -55,7 +57,12 @@ function LoadData(numberToShow) {
             for (let record in data) {
                 //stop laoding record
                 if (record > numberToShow - 1 && numberToShow > 0) return;
-
+                console.log(data[record].info.value + " !== " + filterType);
+                if (
+                    data[record].info.value !== filterType &&
+                    filterType !== "none"
+                )
+                    continue;
                 //Add record
                 addRecord(
                     data[record].info.type,
@@ -72,13 +79,28 @@ function LoadData(numberToShow) {
 
 function filterSelect() {
     const option = document.getElementById("card-filter-select").value;
+
+    //Show button visibility
     if (option === "none") {
         document.getElementById("card-filter-show").style.visibility = "hidden";
     } else {
         document.getElementById("card-filter-show").style.visibility =
             "visible";
     }
+
+    //Filter records
+    LoadData(10, option);
+
+    //Set show button url
+    const optionValue = option.trim();
+    const url = "supports/" + optionValue + "/" + optionValue + ".pdf";
+    document.getElementById("card-filter-show").setAttribute("href", url);
+}
+
+function ShowMore() {
+    const option = document.getElementById("card-filter-select").value;
+    LoadData(0, option);
 }
 
 //Initialize App
-LoadData(10);
+LoadData(10, "none");

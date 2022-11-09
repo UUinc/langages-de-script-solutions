@@ -29,12 +29,17 @@
 
                         <select id="card-filter-select" class="form-select" aria-label="Select TP" onchange="filterSelect()">
                             <option value="none">Select Option</option>
-                            <option value="TP1">TP1</option>
-                            <option value="TP2">TP2</option>
-                            <option value="TP3">TP3</option>
+                            <optgroup label="Courses">
+                                <option value="ManipulationDesObjets">Manipulation Des Objets</option>
+                            </optgroup>
+                            <optgroup label="TPs">
+                                <option value="TP1">TP1</option>
+                            </optgroup>
+                            <optgroup label="Exams">
+                            </optgroup>
                         </select>
                         
-                        <a id="card-filter-show" class="btn btn-success" href="supports/TP1/TP1.pdf" target="_blank" style="visibility: hidden;">show</a>
+                        <a id="card-filter-show" class="btn btn-success" href="#" target="_blank" style="visibility: hidden;">show</a>
 
                     </div>
                     <!-- table  -->
@@ -54,7 +59,7 @@
                     </div>
                     <!-- card footer  -->
                     <div class="card-footer bg-white text-center">
-                        <a href="#" class="link-primary">View All Projects</a>
+                        <button id="card-footer-showMore" class="btn btn-success" onclick="ShowMore()">View All Projects</button>
                     </div>
                 </div>
             </div>
