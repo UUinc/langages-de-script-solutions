@@ -81,4 +81,4 @@ function filterSelect() {
 }
 
 //Initialize App
-LoadData(5);
+LoadData(10);

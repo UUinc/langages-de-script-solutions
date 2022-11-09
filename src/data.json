@@ -64,6 +64,22 @@
         }
     },
     {
+        "name": "IMC",
+        "description": "Slide N° 52 support JS",
+        "url": "supports/ManipulationDesObjets/IMC/index.html",
+        "date": "03/11/2022",
+        "info":
+        {
+            "type": "course",
+            "value": "Manipulation des objets"
+        },
+        "developer":
+        {
+            "name": "Soufiyane AIT MOULAY",
+            "url": "https://github.com/AitMoulay-Soufiyane"
+        }
+    },
+    {
         "name": "Chaine Inversee",
         "description": "Slide N° 56 support JS",
         "url": "supports/ManipulationDesObjets/ChaineInversee/index.html",
