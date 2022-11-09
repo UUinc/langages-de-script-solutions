@@ -46,44 +46,29 @@ function addRecord(
     objTo.appendChild(record);
 }
 
-//Static setting data
-addRecord(
-    "",
-    "Exercice 1",
-    "supports/TP1/Exercice1/index.html",
-    "TP1 Exercice 1 ...",
-    "Yahya Lazrek",
-    "https://github.com/UUinc",
-    "01/10/2022"
-);
-addRecord(
-    "",
-    "Exercice 2",
-    "supports/TP1/Exercice2/index.html",
-    "TP1 Exercice 2 ...",
-    "Yahya Lazrek",
-    "https://github.com/UUinc",
-    "01/10/2022"
-);
-addRecord(
-    "",
-    "Exercice 3",
-    "supports/TP1/Exercice3/index.html",
-    "TP1 Exercice 3 ...",
-    "Yahya Lazrek",
-    "https://github.com/UUinc",
-    "01/10/2022"
-);
-addRecord(
-    "",
-    "Exercice 4",
-    "supports/TP1/Exercice4/index.html",
-    "TP1 Exercice 4 ...",
-    "Yahya Lazrek",
-    "https://github.com/UUinc",
-    "02/10/2022"
-);
+//number To Show less or equal 0 show all
+function LoadData(numberToShow) {
+    //Fetch data.json
+    fetch("src/data.json")
+        .then((obj) => obj.json())
+        .then((data) => {
+            for (let record in data) {
+                //stop laoding record
+                if (record > numberToShow - 1 && numberToShow > 0) return;
 
-fetch("src/data.json")
-    .then((response) => response.json())
-    .then((json) => console.log(json));
+                //Add record
+                addRecord(
+                    data[record].info.type,
+                    data[record].name,
+                    data[record].url,
+                    data[record].description,
+                    data[record].developer.name,
+                    data[record].developer.url,
+                    data[record].date
+                );
+            }
+        });
+}
+
+//Initialize App
+LoadData(5);

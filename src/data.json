@@ -1,9 +1,9 @@
 [
     {
         "name": "Exercice 1",
-        "description": "TP1 Exercice 1 ...",
+        "description": "TP1 Exercice 1",
         "url": "supports/TP1/Exercice1/index.html",
-        "date": "01/10/2022",
+        "date": "25/10/2022",
         "info":
         {
             "type": "TP",
@@ -17,9 +17,9 @@
     },
     {
         "name": "Exercice 2",
-        "description": "TP1 Exercice 2 ...",
+        "description": "TP1 Exercice 2",
         "url": "supports/TP1/Exercice2/index.html",
-        "date": "01/10/2022",
+        "date": "25/10/2022",
         "info":
         {
             "type": "TP",
@@ -33,9 +33,9 @@
     },
     {
         "name": "Exercice 3",
-        "description": "TP1 Exercice 3 ...",
+        "description": "TP1 Exercice 3",
         "url": "supports/TP1/Exercice3/index.html",
-        "date": "01/10/2022",
+        "date": "25/10/2022",
         "info":
         {
             "type": "TP",
@@ -49,13 +49,29 @@
     },
     {
         "name": "Exercice 4",
-        "description": "TP1 Exercice 4 ...",
+        "description": "TP1 Exercice 4",
         "url": "supports/TP1/Exercice4/index.html",
-        "date": "01/10/2022",
+        "date": "25/10/2022",
         "info":
         {
             "type": "TP",
             "value": "TP1"
+        },
+        "developer":
+        {
+            "name": "Yahya Lazrek",
+            "url": "https://github.com/UUinc"
+        }
+    },
+    {
+        "name": "Chaine Inversee",
+        "description": "Slide N° 56 support JS",
+        "url": "supports/ManipulationDesObjets/ChaineInversee/index.html",
+        "date": "01/11/2022",
+        "info":
+        {
+            "type": "course",
+            "value": "Manipulation des objets"
         },
         "developer":
         {
