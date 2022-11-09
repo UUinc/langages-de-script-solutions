@@ -83,3 +83,7 @@ addRecord(
     "https://github.com/UUinc",
     "02/10/2022"
 );
+
+fetch("src/data.json")
+    .then((response) => response.json())
+    .then((json) => console.log(json));
