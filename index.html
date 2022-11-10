@@ -11,64 +11,80 @@
         <link rel="stylesheet" href="src/style.css" />
     </head>
     <body>
-        <div class="background-top">
-            <h1>
-                <img class="background-top-icon" src="src/assets/icons/graduation-hat.png" alt="graduation hat" />
-                Langages de script - Solutions
-            </h1>
-        </div>
-        <div class="row mt-6">
-            <div class="col-md-12 col-12">
-                <!-- card  -->
-                <div class="card">
-                    <!-- card header  -->
-                    <div class="card-header bg-white py-2 filter">
-                        <h4 class="mb-0">Language:</h4>
-                        
-                        <div class="btn-group mx-2" role="group" aria-label="Basic example">
-                            <button type="button" class="btn btn-warning btn-sm" onclick="SetLanguage('js')">JS</button>
-                            <button type="button" class="btn btn-secondary btn-sm" onclick="SetLanguage('php')">PHP</button>
+        <div id="main">
+            <div id="content">
+                <div class="background-top">
+                    <h1>
+                        <img class="background-top-icon" src="src/assets/icons/graduation-hat.png" alt="graduation hat" />
+                        Langages de script - Solutions
+                    </h1>
+                </div>
+                <div class="row mt-6">
+                    <div class="col-md-12 col-12">
+                        <!-- card  -->
+                        <div class="card">
+                            <!-- card header  -->
+                            <div class="card-header bg-white py-2 filter">
+                                <h4 class="mb-0">Language:</h4>
+                                
+                                <div class="btn-group mx-2" role="group" aria-label="Basic example">
+                                    <button type="button" class="btn btn-warning btn-sm" onclick="SetLanguage('js')">JS</button>
+                                    <button type="button" class="btn btn-secondary btn-sm" onclick="SetLanguage('php')">PHP</button>
+                                </div>
+                            </div>
+                            <!-- card filter -->
+                            <div class="card-filter">
+                                <select id="card-filter-select" class="form-select" aria-label="Select TP" onchange="filterSelect()">
+                                    <option value="none">All</option>
+                                    <optgroup label="Courses">
+                                        <option value="ManipulationDesObjets">Manipulation Des Objets</option>
+                                    </optgroup>
+                                    <optgroup label="TPs">
+                                        <option value="TP1">TP1</option>
+                                        <option value="TP2">TP2</option>
+                                    </optgroup>
+                                    <optgroup label="Exams">
+                                    </optgroup>
+                                </select>
+                                
+                                <a id="card-filter-show" class="btn btn-success" href="#" target="_blank" style="visibility: hidden;">show</a>
+                            </div>
+                            <!-- table  -->
+                            <div class="table-responsive">
+                                <table class="table text-nowrap mb-0 mt-3">
+                                    <thead class="table-light">
+                                        <tr>
+                                            <th>Exercices</th>
+                                            <th>Description</th>
+                                            <th>Developer</th>
+                                            <th>Date</th>
+                                            <th>Code Source</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="table-data"></tbody>
+                                </table>
+                            </div>
+                            <!-- card footer  -->
+                            <div class="card-footer bg-white text-center">
+                                <button id="card-footer-showMoreLess" class="btn btn-success" onclick="Show_MoreLess()">show more</button>
+                            </div>
                         </div>
                     </div>
-                    <!-- card filter -->
-                    <div class="card-filter">
-                        <select id="card-filter-select" class="form-select" aria-label="Select TP" onchange="filterSelect()">
-                            <option value="none">All</option>
-                            <optgroup label="Courses">
-                                <option value="ManipulationDesObjets">Manipulation Des Objets</option>
-                            </optgroup>
-                            <optgroup label="TPs">
-                                <option value="TP1">TP1</option>
-                                <option value="TP2">TP2</option>
-                            </optgroup>
-                            <optgroup label="Exams">
-                            </optgroup>
-                        </select>
-                        
-                        <a id="card-filter-show" class="btn btn-success" href="#" target="_blank" style="visibility: hidden;">show</a>
-                    </div>
-                    <!-- table  -->
-                    <div class="table-responsive">
-                        <table class="table text-nowrap mb-0 mt-3">
-                            <thead class="table-light">
-                                <tr>
-                                    <th>Exercices</th>
-                                    <th>Description</th>
-                                    <th>Developer</th>
-                                    <th>Date</th>
-                                    <th>Code Source</th>
-                                </tr>
-                            </thead>
-                            <tbody id="table-data"></tbody>
-                        </table>
-                    </div>
-                    <!-- card footer  -->
-                    <div class="card-footer bg-white text-center">
-                        <button id="card-footer-showMoreLess" class="btn btn-success" onclick="Show_MoreLess()">show more</button>
+                </div>
+                <button onclick="topFunction()" id="toUpBTN" class="rotate90" title="Go to top">➤</button>
+            </div>
+            <!-- Bottom Bar -->
+            <div id="footer">
+                <div class="background-bottom">
+                    <p><b>Langages de script - solutions</b> is optimized for learning and show solutions from students to students.</p>
+                    <p>Send us your solution <a href="mailto:duo.lz.yahya@gmail.com" class="link">here</a></p>
+                    <div class="footer-credit">
+                        <p>© 2022, Yahya Lazrek All rights reserved</p>
                     </div>
                 </div>
             </div>
         </div>
         <script src="src/index.js"></script>
+        <script src="src/js/to_app.js"></script>
     </body>
 </html>

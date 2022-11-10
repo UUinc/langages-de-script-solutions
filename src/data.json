@@ -100,22 +100,5 @@
             "name": "Yahya Lazrek",
             "url": "https://github.com/UUinc"
         }
-    },
-    {
-        "name": "test",
-        "description": "test php",
-        "url": "",
-        "date": "--/--/----",
-        "info":
-        {
-            "section": "php",
-            "type": "tp",
-            "value": "TP1"
-        },
-        "developer":
-        {
-            "name": "Yahya Lazrek",
-            "url": "https://github.com/UUinc"
-        }
     }
 ]

@@ -1,5 +1,8 @@
 //Global Variables
 var section = "js";
+const minRecord = 10;
+var showToggle = false;
+var recordNumber = minRecord;
 
 //Functions
 function addRecord(
@@ -59,15 +62,22 @@ function LoadData(numberToShow, filterType) {
     fetch("src/data.json")
         .then((obj) => obj.json())
         .then((data) => {
+            let count = 0;
             for (let record in data) {
                 //stop laoding record
-                if (record > numberToShow - 1 && numberToShow > 0) return;
-                if (data[record].info.section !== section) continue;
+                count++;
+                if (count > numberToShow && numberToShow > 0) return;
+                if (data[record].info.section !== section) {
+                    count--;
+                    continue;
+                }
                 if (
                     data[record].info.value !== filterType &&
                     filterType !== "none"
-                )
+                ) {
+                    count--;
                     continue;
+                }
                 //Add record
                 addRecord(
                     data[record].info.type,
@@ -94,7 +104,7 @@ function filterSelect() {
     }
 
     //Filter records
-    LoadData(10, option);
+    LoadData(recordNumber, option);
 
     //Set show button url
     const optionValue = option.trim();
@@ -106,13 +116,15 @@ function filterSelect() {
 function Show_MoreLess() {
     const showMoreLessBTN = document.getElementById("card-footer-showMoreLess");
     const option = document.getElementById("card-filter-select").value;
-    if (showMoreLessBTN.innerText === "show more") {
-        LoadData(0, option);
+    if (!showToggle) {
+        recordNumber = 0;
         showMoreLessBTN.innerText = "show less";
     } else {
-        LoadData(10, option);
+        recordNumber = minRecord;
         showMoreLessBTN.innerText = "show more";
     }
+    LoadData(recordNumber, option);
+    showToggle = !showToggle;
 }
 
 function SetLanguage(_section) {
@@ -121,4 +133,4 @@ function SetLanguage(_section) {
 }
 
 //Initialize App
-LoadData(10, "none");
+LoadData(minRecord, "none");
