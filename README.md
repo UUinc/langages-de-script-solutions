@@ -5,9 +5,11 @@ solutions developed by students for students 👨🏻‍🎓👩🏻‍🎓.
 
 All "Support" and "Série des travaux pratiques" was created by prof **Mohammed AMEKSA** 👨🏽‍🏫
 
-To test out the solutions: https://uuinc.github.io/JS-Solutions
+To test out the solutions: https://uuinc.github.io/langages-de-script-solutions
 
-To download supports: <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/UUinc/JS-Solutions/tree/main/Supports" target="_blank">download</a>
+To download supports: <a href="https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/UUinc/langages-de-script-solutions/tree/main/supports" target="_blank">download</a>
+
+![image](https://user-images.githubusercontent.com/63449913/201174092-f33978b4-1348-44dd-bcb0-dce0d04b440c.png)
 
 #### Collaborators:
 
