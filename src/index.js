@@ -1,3 +1,7 @@
+//Global Variables
+var section = "js";
+
+//Functions
 function addRecord(
     recordIcon,
     recordName,
@@ -34,7 +38,7 @@ function addRecord(
         recordName +
         "</a> </h5> </div> </div> </td> <td class='align-middle'>" +
         description +
-        "</td> <td class='align-middle'> <a class='link link-success' href='" +
+        "</td> <td class='align-middle'> <a class='btn btn-outline-success' href='" +
         developerUrl +
         "' target='_blank' > " +
         developerName +
@@ -49,7 +53,8 @@ function addRecord(
 //number To Show less or equal 0 show all
 function LoadData(numberToShow, filterType) {
     //Empty Table
-    document.getElementById("table-data").innerHTML = "";
+    const table = document.getElementById("table-data");
+    table.innerHTML = "";
     //Fetch data.json
     fetch("src/data.json")
         .then((obj) => obj.json())
@@ -57,7 +62,7 @@ function LoadData(numberToShow, filterType) {
             for (let record in data) {
                 //stop laoding record
                 if (record > numberToShow - 1 && numberToShow > 0) return;
-                console.log(data[record].info.value + " !== " + filterType);
+                if (data[record].info.section !== section) continue;
                 if (
                     data[record].info.value !== filterType &&
                     filterType !== "none"
@@ -93,13 +98,26 @@ function filterSelect() {
 
     //Set show button url
     const optionValue = option.trim();
-    const url = "supports/" + optionValue + "/" + optionValue + ".pdf";
+    const url =
+        "supports/" + section + "/" + optionValue + "/" + optionValue + ".pdf";
     document.getElementById("card-filter-show").setAttribute("href", url);
 }
 
-function ShowMore() {
+function Show_MoreLess() {
+    const showMoreLessBTN = document.getElementById("card-footer-showMoreLess");
     const option = document.getElementById("card-filter-select").value;
-    LoadData(0, option);
+    if (showMoreLessBTN.innerText === "show more") {
+        LoadData(0, option);
+        showMoreLessBTN.innerText = "show less";
+    } else {
+        LoadData(10, option);
+        showMoreLessBTN.innerText = "show more";
+    }
+}
+
+function SetLanguage(_section) {
+    section = _section;
+    filterSelect();
 }
 
 //Initialize App

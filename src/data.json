@@ -1,11 +1,12 @@
 [
     {
         "name": "Exercice 1",
-        "description": "TP1 Exercice 1",
-        "url": "supports/TP1/Exercice1/index.html",
+        "description": "TP1 Exercice 1 JS",
+        "url": "supports/js/TP1/Exercice1/index.html",
         "date": "25/10/2022",
         "info":
         {
+            "section": "js",
             "type": "TP",
             "value": "TP1"
         },
@@ -17,11 +18,12 @@
     },
     {
         "name": "Exercice 2",
-        "description": "TP1 Exercice 2",
-        "url": "supports/TP1/Exercice2/index.html",
+        "description": "TP1 Exercice 2 JS",
+        "url": "supports/js/TP1/Exercice2/index.html",
         "date": "25/10/2022",
         "info":
         {
+            "section": "js",
             "type": "TP",
             "value": "TP1"
         },
@@ -33,11 +35,12 @@
     },
     {
         "name": "Exercice 3",
-        "description": "TP1 Exercice 3",
-        "url": "supports/TP1/Exercice3/index.html",
+        "description": "TP1 Exercice 3 JS",
+        "url": "supports/js/TP1/Exercice3/index.html",
         "date": "25/10/2022",
         "info":
         {
+            "section": "js",
             "type": "TP",
             "value": "TP1"
         },
@@ -49,11 +52,12 @@
     },
     {
         "name": "Exercice 4",
-        "description": "TP1 Exercice 4",
-        "url": "supports/TP1/Exercice4/index.html",
+        "description": "TP1 Exercice 4 JS",
+        "url": "supports/js/TP1/Exercice4/index.html",
         "date": "25/10/2022",
         "info":
         {
+            "section": "js",
             "type": "TP",
             "value": "TP1"
         },
@@ -66,10 +70,11 @@
     {
         "name": "IMC",
         "description": "Slide N° 52 support JS",
-        "url": "supports/ManipulationDesObjets/IMC/index.html",
+        "url": "supports/js/ManipulationDesObjets/IMC/index.html",
         "date": "03/11/2022",
         "info":
         {
+            "section": "js",
             "type": "course",
             "value": "ManipulationDesObjets"
         },
@@ -82,12 +87,30 @@
     {
         "name": "Chaine Inversee",
         "description": "Slide N° 56 support JS",
-        "url": "supports/ManipulationDesObjets/ChaineInversee/index.html",
+        "url": "supports/js/ManipulationDesObjets/ChaineInversee/index.html",
         "date": "01/11/2022",
         "info":
         {
+            "section": "js",
             "type": "course",
             "value": "ManipulationDesObjets"
+        },
+        "developer":
+        {
+            "name": "Yahya Lazrek",
+            "url": "https://github.com/UUinc"
+        }
+    },
+    {
+        "name": "test",
+        "description": "test php",
+        "url": "",
+        "date": "--/--/----",
+        "info":
+        {
+            "section": "php",
+            "type": "tp",
+            "value": "TP1"
         },
         "developer":
         {

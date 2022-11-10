@@ -54,12 +54,37 @@
     background-color: var(--Green) !important;
     border-color: var(--Green) !important;
 }
+.btn-outline-success:hover
+{
+color: white !important;
+    background-color: var(--Green) !important;
+    border-color: var(--Green) !important;
+}
 .form-select:focus {
     border-color: #28a745 !important;
     box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.25) !important;
+}
+.filter
+{
+    display: flex;
+    align-items: center;
 }
 a
 {
     color: var(--Green) !important;
     text-decoration: none !important;
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:checked,
+.btn-secondary:active,
+.btn-secondary:enabled
+{
+    background-color: purple;
+    border-color: purple !important;
+}
+.btn-secondary:focus
+{
+    box-shadow: 0 0 0 0.2rem rgba(131, 40, 167, 0.25) !important;
 }
