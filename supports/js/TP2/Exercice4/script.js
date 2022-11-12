@@ -13,7 +13,7 @@ var form = document.querySelector('#form');
 var pa = [];
 var etudiants = [];
 
-//traiter le fichier sous format json car il est en format binaire bson : 
+//traiter le fichier sous format json car il est en format binaire bson : ( c'est un REST API )
 //elle retourne un promise : 
 fetch('https://jsonplaceholder.typicode.com/users')
 .then(res => res.json())
@@ -77,8 +77,8 @@ moyenne.addEventListener('click',(event) => {
     }
     if(!flag)   
         {
-              pa.push(`La moyenne est  : ${(somme/etudiants.length).toFixed(2)}`);
-              para.innerHTML += `<li>La moyenne est  : ${(somme/etudiants.length).toFixed(2)}</li>`;
+        pa.push(`La moyenne est  : ${(somme/etudiants.length).toFixed(2)}`);
+        para.innerHTML += `<li>La moyenne est  : ${(somme/etudiants.length).toFixed(2)}</li>`;
         }
 })
 
@@ -113,7 +113,12 @@ max.addEventListener('click',(event) => {
 
 trier.addEventListener('click',(event) => { 
     etudiants.sort((a,b) => {
-         return a.nom-b.nom;
+         if(a.nom > b.nom)
+            return 1;
+        else if(a.nom < b.nom)
+            return -1;
+        else 
+            return 0;
     })
     data.innerHTML = "";
     data.innerHTML = `<tr>
