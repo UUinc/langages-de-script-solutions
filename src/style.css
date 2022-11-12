@@ -91,7 +91,6 @@ color: white !important;
 {
     color: white;
     background-image: linear-gradient(to top,#018f37b4, var(--Green), #016d2a);
-    height: 120px;
     padding-top: 5px;
 }
 .background-bottom > p

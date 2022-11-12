@@ -15,7 +15,6 @@ To download supports: <a href="https://minhaskamal.github.io/DownGit/#/home?url=
 
 -   Yahya Lazrek
 -   Zakaria Messous
--   soufiyane aitmoulay
 
 #### if you have any question feel free to ask :smile:
 
