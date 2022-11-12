@@ -94,23 +94,33 @@ function LoadData(numberToShow, filterType) {
 
 function filterSelect() {
     const option = document.getElementById("card-filter-select").value;
+    const filterBTN = document.getElementById("card-filter-btn");
+    var url = "";
 
-    //Show button visibility
+    //Download or show support
     if (option === "none") {
-        document.getElementById("card-filter-show").style.visibility = "hidden";
+        filterBTN.innerText = "download all solutions";
+        url =
+            "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/UUinc/langages-de-script-solutions/tree/main/supports";
     } else {
-        document.getElementById("card-filter-show").style.visibility =
-            "visible";
+        filterBTN.innerText = "show";
+
+        //Filter records
+        LoadData(recordNumber, option);
+
+        //Set show button url
+        const optionValue = option.trim();
+        url =
+            "supports/" +
+            section +
+            "/" +
+            optionValue +
+            "/" +
+            optionValue +
+            ".pdf";
     }
 
-    //Filter records
-    LoadData(recordNumber, option);
-
-    //Set show button url
-    const optionValue = option.trim();
-    const url =
-        "supports/" + section + "/" + optionValue + "/" + optionValue + ".pdf";
-    document.getElementById("card-filter-show").setAttribute("href", url);
+    filterBTN.setAttribute("href", url);
 }
 
 function Show_MoreLess() {
