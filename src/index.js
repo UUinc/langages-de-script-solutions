@@ -100,13 +100,11 @@ function filterSelect() {
     //Download or show support
     if (option === "none") {
         filterBTN.innerText = "download all solutions";
+
         url =
             "https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/UUinc/langages-de-script-solutions/tree/main/supports";
     } else {
         filterBTN.innerText = "show";
-
-        //Filter records
-        LoadData(recordNumber, option);
 
         //Set show button url
         const optionValue = option.trim();
@@ -119,8 +117,10 @@ function filterSelect() {
             optionValue +
             ".pdf";
     }
-
     filterBTN.setAttribute("href", url);
+
+    //Filter records
+    LoadData(recordNumber, option);
 }
 
 function Show_MoreLess() {
