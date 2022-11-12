@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+body{
+    background-color: #eaeaea;
+}
+P{
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    position: relative;
+    height: 70vh;
+    background: url("images/pizza.jpg") center no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.7);
+}
+nav{
+    position: relative;
+    padding: 2% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+nav ul li{
+    margin: 0 5px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+
+}
+nav ul li:hover{
+    cursor: pointer;
+}
+nav ul li::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #eaeaea;
+    bottom: 0;
+    transition: .5s;
+}
+nav ul li:hover::before{
+    width: 100%;
+}
+nav h3{
+    font-family: 'Ubuntu', sans-serif;
+}
+.content{
+    position: relative;
+    margin-top: 30px;
+}
+.content h1{
+    text-align: center;
+    font-size: 6em;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+
+/*Second container*/
+.second-container{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    z-index: 10;
+    margin-top: -300px;
+}
+.left-container{
+    flex-basis: 35%;
+    position: relative;
+}
+.center-container{
+    flex-basis: 30%;
+}
+.image-container{
+    position: relative;
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.image-container i{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    transform: translate(-10%,-10%);
+}
+.right-container{
+    flex-basis: 35%;
+    position: relative;
+}
+.right-container-content{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    width: 100%;
+    bottom: 5%;
+    padding: 5px;
+}
+.left-container-content{
+    position: absolute;
+    bottom: 3%;
+    padding: 5px 8px;
+}
+.left-container-content p{
+    text-align: justify;
+}
+p span{
+    color: #0F0E0E;
+}
+
+/*Third container*/
+.third-container{
+    width: 80%;
+    display: flex;
+    margin:  50px auto;
+}
+.third-left-container{
+   flex-basis: 40%;
+}
+.third-left-container h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.third-left-container h3 i{
+    color: #fe0000;
+}
+.third-left-container ul{
+    padding-left: 20px;
+    list-style: none;
+}
+.third-left-container p{
+    font-size: 16px;
+    line-height: 1.7;
+}
+.third-right-container{
+    flex-basis: 60%;
+    
+}
+.third-right-container h3{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+.third-right-container h3 i{
+    color: #fe0000;
+}
+.third-right-container p{
+    font-size: 16px;
+    line-height: 2;
+}
+.third-right-container ol{
+    padding-left: 50px;
+}
+
+/* fourth-container */
+.fourth-container{
+    padding: 15px;
+    background-color: rgb(212, 210, 210);   
+}
+.fourth-container-wrapper{
+    width: 60%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.fourth-container-left{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+}
+.image-user{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+    overflow: hidden;
+}
+.image-user img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.info-user-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.info-user h4 {
+    font-family: 'Ubuntu', sans-serif; 
+}
+.fourth-container-right{
+   flex-basis: 50%;
+   text-align: center !important;
+}
+hr{
+    width: 60%;
+    margin: 0 auto;
+    height: 1px;
+    background-color: #0F0E0E;
+}
+hr:nth-of-type(1){
+    margin-top: 15px !important;
+}
+/* comment area */
+.comment-container{
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    background-color: #eaeaea;
+    padding: 2px 50px;
+}
+.comment-container .image-user {
+    height: auto;
+    width: auto;
+}
+.comment-container .image-user img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.input-container {
+    width: 100%;
+    position: relative;
+}
+.comment-container input{
+    border: 0;
+    color: #0F0E0E;
+    text-indent: 10px;
+    outline: none;
+    font-size: 15px;
+    background-color: transparent;
+    width: 100%;
+    padding: 10px;
+}
+.comment-container button{
+    border: 0;
+    background-color: transparent;
+    color: #fe0000;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+/*Responsiveness*/
+@media(max-width:900px){
+    .container h1{
+        font-size: 4.5em;
+    }
+    .second-container{
+        flex-direction: column;
+        margin-top: -300px;
+    }
+    .left-container-content,.right-container-content{
+        position: relative;
+        color: white;
+    }
+    .third-container{
+        flex-direction: column;
+    }
+    .third-left-container{
+        margin-bottom: 20px;
+    }
+    .fourth-container-wrapper{
+        flex-direction: column;
+    }
+    .comment-container{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:500px){
+    .container h1{
+        font-size: 3em;
+    }
+    p{
+       color: #0F0E0E;
+    }
+    .second-container{
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .left-container-content,.right-container-content{
+        position: relative;
+        color: white;
+    }
+    .third-container{
+        flex-direction: column;
+    }
+    .third-left-container{
+        margin-bottom: 20px;
+    }
+    .fourth-container-wrapper{
+        flex-direction: column;
+    }
+    .comment-container{
+        flex-direction: column;
+    }
+}
