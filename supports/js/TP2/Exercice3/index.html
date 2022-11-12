@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS - TP2 Exercice 3</title>
+</head>
+<body onload="DisplayList()">
+    <div id="div1">
+         <label id="Title-list">liste des fruits disponibles</label>
+         <div class="Display"></div>
+         <div class="Add-field">
+            <div>
+                 <label >Ajouter au panier : </label>
+                 <input type="text" id="AddToCart">
+            </div>
+            <div>
+                 <label >Ajouter au liste des fruits : </label>
+                 <input type="text" id="AddToList">
+            </div>
+        </div>
+       <div>
+             <input type="button" onclick="Sort()" value="Organiser les fruits alphabétiquement">
+             <br>
+             <input type="button" onclick="Reverse()" value="Inverser les éléments du tableau">
+       </div>
+    
+    </div>
+    <div id="div2"> 
+         <label id="Title-cart"></label>
+         <div class="DisplayCart"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(50, 50, 50);
+}
+.container{
+    text-align: center;
+    display: flex;
+}
+ul{
+    margin-top: 50px;
+}
+.items{
+   width: 50%;
+   margin-left: 10px;
+}
+ul#list li{
+   background-color: azure;
+    margin: 10px;
+    width: 40%;
+    padding: 10px;
+    border: 2px solid black;
+    list-style: none;
+}
+.inputs{
+    margin-top: 50px;
+}
+input{
+    display: flex;
+    
+}
+.inputs button{
+    padding: 10px;
+    background-color: greenyellow;
+}
+.inputs input{
+    padding: 10px;
+    border-radius: 3px;
+}
+select{
+    padding: 5px;
+}
+table tr td{
+    color: white;
+}

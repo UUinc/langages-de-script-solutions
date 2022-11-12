@@ -1,6 +1,6 @@
 [
     {
-        "name": "Exercice 1",
+        "name": "TP1 - Exercice 1",
         "description": "TP1 Exercice 1 JS",
         "url": "supports/js/TP1/Exercice1/index.html",
         "date": "25/10/2022",
@@ -17,7 +17,7 @@
         }
     },
     {
-        "name": "Exercice 2",
+        "name": "TP1 - Exercice 2",
         "description": "TP1 Exercice 2 JS",
         "url": "supports/js/TP1/Exercice2/index.html",
         "date": "25/10/2022",
@@ -34,7 +34,7 @@
         }
     },
     {
-        "name": "Exercice 3",
+        "name": "TP1 - Exercice 3",
         "description": "TP1 Exercice 3 JS",
         "url": "supports/js/TP1/Exercice3/index.html",
         "date": "25/10/2022",
@@ -51,7 +51,7 @@
         }
     },
     {
-        "name": "Exercice 4",
+        "name": "TP1 - Exercice 4",
         "description": "TP1 Exercice 4 JS",
         "url": "supports/js/TP1/Exercice4/index.html",
         "date": "25/10/2022",
@@ -99,6 +99,57 @@
         {
             "name": "Yahya Lazrek",
             "url": "https://github.com/UUinc"
+        }
+    },
+    {
+        "name": "TP2 - Exercice 1",
+        "description": "TP2 Exercice 1 JS",
+        "url": "supports/js/TP2/Exercice1/index.html",
+        "date": "08/11/2022",
+        "info":
+        {
+            "section": "js",
+            "type": "TP",
+            "value": "TP2"
+        },
+        "developer":
+        {
+            "name": "Hamza Ouabiba",
+            "url": "https://github.com/Hamza-ouabiba"
+        }
+    },
+    {
+        "name": "TP2 - Exercice 3",
+        "description": "TP2 Exercice 3 JS",
+        "url": "supports/js/TP2/Exercice3/index.html",
+        "date": "09/11/2022",
+        "info":
+        {
+            "section": "js",
+            "type": "TP",
+            "value": "TP2"
+        },
+        "developer":
+        {
+            "name": "Walid Habbach",
+            "url": "https://github.com/walidhabbach"
+        }
+    },
+    {
+        "name": "TP2 - Exercice 4",
+        "description": "TP2 Exercice 4 JS",
+        "url": "supports/js/TP2/Exercice4/index.html",
+        "date": "09/11/2022",
+        "info":
+        {
+            "section": "js",
+            "type": "TP",
+            "value": "TP2"
+        },
+        "developer":
+        {
+            "name": "Hamza Ouabiba",
+            "url": "https://github.com/Hamza-ouabiba"
         }
     }
 ]

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - TP2 Exercice 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+</style>
+<body>
+    <!--Tableau -->
+    <div class="container" >
+        <div class="formula">
+            <form id="form">
+                 <div class="inputs">
+                     <input type="text" placeholder="Entrer le nom" id="nom">
+                     <input type="text" placeholder="Entrer le prenom" id="prenom">
+                    <input type="text" placeholder="Entrer la Note" id="note">
+                 </div>
+                 <div class="ajouter">
+                    <button>Ajouter Etudiant</button>
+                 </div>
+            </form>
+        </div>
+        <div class="affichage">
+            <table border="1px" width = "100%" id ="row" >
+                <tr>
+                    <th>Prènom et Nom :</th>
+                    <th>Note : </th>
+                </tr>
+            </table>
+            <div class="buttons" >
+                <div class="user">
+                    <button id="sup10">Etudiants > 10 ?</button>
+                    <button id="moyenne">La Moyenne</button>
+                    <button id="max">Max ?</button>
+                    <button id="recherche">Recherche</button>
+                    <button id="trie">Trier Par Nom</button>
+                </div>
+                <ul class="content"></ul>
+                <div class="search">
+                    <input type="text" placeholder="Chercher un etudiant : " id="student">
+                    <button id="search">Chercher</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
