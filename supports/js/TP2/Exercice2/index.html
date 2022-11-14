@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>JS - TP2 Exercice 2</title>
+</head>
+<body>
+    
+    <div id="Length-field">
+        <label for="">Saisir le nombre d'élement du tableau</label><br>
+        <input type="number" id="length">
+    </div>
+    <div class="Button"> 
+         <input type="button" id="BtnName" value="Tableau de prénoms" onclick="BtnName()">
+         <input type="button" id="BtnNumber" value="Tableau de Nombres" onclick="BtnNumber()">
+    </div>  
+    
+    <div class="DisplayNumber-field">
+         <div class="Number"></div>
+         <div class="Square"></div>
+    </div>
+    <div class="DisplayName-field">
+        <div>
+            <div class="Name"></div>
+            <div class="AddName-field">
+               <label >Ajouter un prénom : </label>
+               <input type="text" id="AddToList" >
+           </div>
+        </div>
+        
+        <div class="Capitalize"></div>
+       
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

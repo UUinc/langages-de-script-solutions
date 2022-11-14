@@ -119,6 +119,23 @@
         }
     },
     {
+        "name": "TP2 - Exercice 2",
+        "description": "TP2 Exercice 2 JS",
+        "url": "supports/js/TP2/Exercice2/index.html",
+        "date": "13/11/2022",
+        "info":
+        {
+            "section": "js",
+            "type": "TP",
+            "value": "TP2"
+        },
+        "developer":
+        {
+            "name": "Walid Habbach",
+            "url": "https://github.com/walidhabbach"
+        }
+    },
+    {
         "name": "TP2 - Exercice 3",
         "description": "TP2 Exercice 3 JS",
         "url": "supports/js/TP2/Exercice3/index.html",
