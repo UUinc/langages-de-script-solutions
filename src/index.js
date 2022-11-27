@@ -142,5 +142,9 @@ function SetLanguage(_section) {
     filterSelect();
 }
 
+//Set current year
+document.getElementById("footer-credit-year").innerText =
+    new Date().getFullYear();
+
 //Initialize App
 LoadData(minRecord, "none");

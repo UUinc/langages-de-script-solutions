@@ -18,8 +18,8 @@
 }
 .background-top
 {
-    background-image: linear-gradient(var(--Green),
-        var(--Green), var(--Green), #016d2a);
+    background-color: var(--Green);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/images/background.png);
     height: 100px;
     width: 100%;
 }
@@ -90,7 +90,8 @@ color: white !important;
 .background-bottom
 {
     color: white;
-    background-image: linear-gradient(to top,#018f37b4, var(--Green), #016d2a);
+    background-color: var(--Green);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/images/background.png);
     padding-top: 5px;
 }
 .background-bottom > p
@@ -105,7 +106,6 @@ color: white !important;
 {
     color: white !important;
     font-weight: bold;
-    text-decoration: underline !important;
 }
 .arrow-up {
     width: 0;
