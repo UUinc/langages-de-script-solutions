@@ -185,5 +185,22 @@
             "name": "Soufiyane AIT MOULAY",
             "url": "https://github.com/AitMoulay-Soufiyane"
         }
+    },
+    {
+        "name": "TP3 - Exercice 1",
+        "description": "TP3 Exercice 1 JS",
+        "url": "supports/js/TP3/Exercice1/index.html",
+        "date": "28/11/2022",
+        "info":
+        {
+            "section": "js",
+            "type": "TP",
+            "value": "TP3"
+        },
+        "developer":
+        {
+            "name": "Yahya Lazrek",
+            "url": "https://github.com/UUinc"
+        }
     }
 ]

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS - TP3 Exercice 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="app">
+        <div class="app-input">
+            <table>
+                <div class="app-input-section">
+                    <tr>
+                        <td>Couleur de font(rgb):</td>
+                        <td id="app-input-color-text" class="app-input-value">rgb(0,0,0)</td>
+                        <td>Red :</td>
+                        <td> 0 <input id="app-input-red" type="range" value="0" min="0" max="255"> 255 </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Green :</td>
+                        <td> 0 <input id="app-input-green" type="range" value="0" min="0" max="255"> 255 </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>Blue :</td>
+                        <td> 0 <input id="app-input-blue" type="range" value="0" min="0" max="255"> 255 </td>
+                    </tr>
+                </div>
+                <div class="app-input-section">
+                    <tr>
+                        <td>Padding</td>
+                        <td id="app-input-padding-text" class="app-input-value">rgb(0,0,0)</td>
+                        <td></td>
+                        <td> 0 <input id="app-input-padding" type="range" value="0" min="0" max="30"> 30 </td>
+                    </tr>
+                </div>
+                <div class="app-input-section">
+                    <tr>
+                        <td>Height</td>
+                        <td id="app-input-height-text" class="app-input-value">rgb(0,0,0)</td>
+                        <td></td>
+                        <td> 0 <input id="app-input-height" type="range" value="100" min="0" max="300"> 300 </td>
+                    </tr>
+                </div>
+                <div class="app-input-section">
+                    <tr>
+                        <td>Width</td>
+                        <td id="app-input-width-text" class="app-input-value">rgb(0,0,0)</td>
+                        <td></td>
+                        <td> 0 <input id="app-input-width" type="range" value="100" min="0" max="500"> 500 </td>
+                    </tr>
+                </div>
+                <div class="app-input-section">
+                    <tr>
+                        <td>Arrondi</td>
+                        <td id="app-input-arrondi-text" class="app-input-value">rgb(0,0,0)</td>
+                        <td></td>
+                        <td> 0 <input id="app-input-arrondi" type="range" value="0" min="0" max="50"> 050 </td>
+                    </tr>
+                </div>
+                <div class="app-input-section">
+                    <tr>
+                        <td>Rotation</td>
+                        <td id="app-input-rotation-text" class="app-input-value">rgb(0,0,0)</td>
+                        <td></td>
+                        <td> 0 <input id="app-input-rotation" type="range" value="0" min="0" max="180"> 180 </td>
+                    </tr>
+                </div>
+            </table>
+        </div>
+        <div class="app-result">
+            <div id="app-result-object"> Resultat obtenu </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

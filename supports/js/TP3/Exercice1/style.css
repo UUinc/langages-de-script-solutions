@@ -1,0 +1,30 @@
+.app 
+{
+    width: 600px;
+    padding: 0 calc((100% - 600px)/2);
+}
+.app-input 
+{
+    margin: 50px 0 150px 0;
+}
+.app-input>table
+{
+    width: 100%;
+}
+.app-input input
+{
+    width: 75%;
+}
+.app-input-value
+{
+    text-align: center;
+    color: white;
+    background-color: green;
+    border-radius: 3px;
+}
+
+#app-result-object
+{
+    color: white;
+    background-color: black;
+}
