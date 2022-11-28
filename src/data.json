@@ -253,5 +253,22 @@
             "name": "Yahya Lazrek",
             "url": "https://github.com/UUinc"
         }
+    },
+    {
+        "name": "Controle G6 2022",
+        "description": "Controle G6 2022 JS",
+        "url": "supports/js/controle_G6_2022/controle_G6_2022_yahya_lazrek/index.html",
+        "date": "28/11/2022",
+        "info":
+        {
+            "section": "js",
+            "type": "exam",
+            "value": "controle_G6_2022"
+        },
+        "developer":
+        {
+            "name": "Yahya Lazrek",
+            "url": "https://github.com/UUinc"
+        }
     }
 ]

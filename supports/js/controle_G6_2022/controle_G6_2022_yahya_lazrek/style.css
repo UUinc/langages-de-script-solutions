@@ -1,0 +1,53 @@
+.app
+{
+    display: flex;
+    justify-content: center;
+}
+
+.choix
+{
+    margin-right: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#choix-select
+{
+    background-color: blueviolet;
+    height: 35px;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+.result
+{
+    background-color: aquamarine;
+    border-radius: 10px;
+    margin-left: 25px;
+}
+
+.result-card
+{
+    padding: 0 15px;
+}
+
+.result-card-info-image-container
+{
+    text-align: center;
+}
+
+#result-card-info-image
+{
+    width: 180px;
+    height: 180px;
+    border: 3px solid blueviolet;
+    border-radius: 100%;
+}
+
+li 
+{
+    margin-bottom: 20px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid blueviolet;
+}

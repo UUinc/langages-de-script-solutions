@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle G6 2022 JS</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app">
+        <div class="choix">
+            <select id="choix-select">
+                <option>Choisir un etudiant</option>
+                <option>Ali</option>
+                <option>Ouissal</option>
+                <option>Yahya</option>
+                <option>Houda</option>
+            </select>
+        </div>
+        <div class="result">
+            <div class="result-card">
+                <h2>Detail de l'etudiant choisi:</h2>
+                <div id="result-card-info" style="visibility: hidden;">
+                    <div class="result-card-info-image-container">
+                        <img id="result-card-info-image" src="">
+                    </div>
+                    <ul>
+                        <li>Nom : <span id="result-card-info-nom"></span></li>
+                        <li>Prenom : <span id="result-card-info-prenom"></span></li>
+                        <li>Age : <span id="result-card-info-age"></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
