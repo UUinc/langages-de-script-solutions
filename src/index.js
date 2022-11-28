@@ -4,6 +4,8 @@ const minRecord = 10;
 var showToggle = false;
 var recordNumber = minRecord;
 
+var Data;
+
 //Functions
 function addRecord(
     recordIcon,
@@ -52,51 +54,51 @@ function addRecord(
         "' target='_blank' > download </a> </td>";
     objTo.appendChild(record);
 }
-
-//number To Show less or equal 0 show all
 function LoadData(numberToShow, filterType) {
-    //Empty Table
-    const table = document.getElementById("table-data");
-    table.innerHTML = "";
     //Fetch data.json
     fetch("src/data.json")
         .then((obj) => obj.json())
         .then((data) => {
-            let count = 0;
-            let countType = 0;
-            for (let record in data) {
-                //Calculate type count
-                if (data[record].info.value === filterType) countType++;
-                //stop laoding record
-                count++;
-                if (count > numberToShow && numberToShow > 0) return;
-                if (data[record].info.section !== section) {
-                    count--;
-                    continue;
-                }
-                if (
-                    data[record].info.value !== filterType &&
-                    filterType !== "none"
-                ) {
-                    count--;
-                    continue;
-                }
-                //Add record
-                addRecord(
-                    data[record].info.type,
-                    data[record].name,
-                    data[record].url,
-                    data[record].description,
-                    data[record].developer.name,
-                    data[record].developer.url,
-                    data[record].date
-                );
-                //Set counter
-                document.getElementById(
-                    "counter"
-                ).innerText = `${count}/${countType}`;
-            }
+            Data = data;
+            ShowData(numberToShow, filterType);
         });
+}
+//number To Show less or equal 0 show all
+function ShowData(numberToShow, filterType) {
+    //Empty Table
+    const table = document.getElementById("table-data");
+    table.innerHTML = "";
+
+    let count = 0;
+    for (let record in Data) {
+        //stop laoding record
+        count++;
+        if (count > numberToShow && numberToShow > 0) {
+            count--;
+            break;
+        }
+        if (Data[record].info.section !== section) {
+            count--;
+            continue;
+        }
+        if (Data[record].info.value !== filterType && filterType !== "none") {
+            count--;
+            continue;
+        }
+        //Add record
+        addRecord(
+            Data[record].info.type,
+            Data[record].name,
+            Data[record].url,
+            Data[record].description,
+            Data[record].developer.name,
+            Data[record].developer.url,
+            Data[record].date
+        );
+    }
+    document.getElementById("counter").innerText = `${count}/${DataCount(
+        filterType
+    )}`;
 }
 
 function filterSelect() {
@@ -127,7 +129,7 @@ function filterSelect() {
     filterBTN.setAttribute("href", url);
 
     //Filter records
-    LoadData(recordNumber, option);
+    ShowData(recordNumber, option);
 }
 
 function Show_MoreLess() {
@@ -140,7 +142,7 @@ function Show_MoreLess() {
         recordNumber = minRecord;
         showMoreLessBTN.innerText = "show more";
     }
-    LoadData(recordNumber, option);
+    ShowData(recordNumber, option);
     showToggle = !showToggle;
 }
 
@@ -148,6 +150,20 @@ function SetLanguage(_section) {
     section = _section;
     filterSelect();
 }
+
+function DataCount(filterType) {
+    let count = 0;
+    for (let record in Data) {
+        count++;
+
+        if (filterType === undefined || filterType === "none") continue;
+        if (Data[record].info.value !== filterType && filterType !== "none") {
+            count--;
+        }
+    }
+    return count;
+}
+
 //Set current year
 document.getElementById("footer-credit-year").innerText =
     new Date().getFullYear();
