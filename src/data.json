@@ -236,5 +236,22 @@
             "name": "Hamza Ouabiba",
             "url": "https://github.com/Hamza-ouabiba"
         }
+    },
+    {
+        "name": "Controle G2 2022",
+        "description": "Controle G2 2022 JS",
+        "url": "supports/js/controle_G2_2022/controle_G2_2022_yahya_lazrek/index.html",
+        "date": "27/11/2022",
+        "info":
+        {
+            "section": "js",
+            "type": "exam",
+            "value": "controle_G2_2022"
+        },
+        "developer":
+        {
+            "name": "Yahya Lazrek",
+            "url": "https://github.com/UUinc"
+        }
     }
 ]

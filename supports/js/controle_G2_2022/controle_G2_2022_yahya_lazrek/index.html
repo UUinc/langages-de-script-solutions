@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle JS G2</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset>
+        <legend>Ajout d'un etudiant</legend>
+        <div class="cart-inputs">
+            <div class="cart-input">
+                <label>Nom et Prenom</label>
+                <input id="cart-input-nom" type="text">
+            </div>
+            <br>
+            <div class="cart-input">
+                <label>Age</label>
+                <input id="cart-input-age" type="number">
+            </div>
+        </div>
+        <br>
+        <button id="cart-button">Ajouter</button>
+    </fieldset>
+
+    <div class="container">
+        <table id="data" style="visibility: hidden;">
+            <tr>
+                <th>Nom et Prenom</th>
+                <th>Age</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

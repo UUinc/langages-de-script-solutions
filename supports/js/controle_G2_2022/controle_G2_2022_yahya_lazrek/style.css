@@ -1,0 +1,68 @@
+fieldset
+{
+    text-align: center;
+    margin: 40px 25%;
+    border-radius: 8px;
+    border: 2px solid green;
+}
+legend
+{
+    color: white;
+    background-color: green;
+    height: 26px;
+    width: 140px;
+    padding-top: 8px;
+    border-radius: 8px 0 8px 0;
+}
+
+.cart-inputs
+{
+    text-align: left;
+}
+
+.cart-input 
+{
+    margin: 35px 0 -10px 0;
+}
+.cart-input label 
+{
+    display: inline-block;
+    width: 140px;
+    text-align: left;
+    padding-left: 20px;
+}
+.cart-input input 
+{
+    border: 0;
+    border-bottom: 2px solid green;
+    outline: none;
+    width: 70%;
+}
+
+#cart-button
+{
+    color: white;
+    background-color: green;
+    border: 0;
+    height: 38px;
+    width: 90px;
+    margin: 40px 0 30px 0;
+    border-radius: 8px;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.container table
+{
+    width: 50%;
+    text-align: left;
+    border-collapse: collapse;
+}
+.container th
+{
+    border-bottom: 3px solid green;
+}
