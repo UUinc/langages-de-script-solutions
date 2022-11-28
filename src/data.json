@@ -69,14 +69,14 @@
     },
     {
         "name": "IMC",
-        "description": "Slide N° 52 support JS",
-        "url": "supports/js/ManipulationDesObjets/IMC/index.html",
+        "description": "Chapitre 2 slide N° 52 support JS",
+        "url": "supports/js/chapitre2/IMC/index.html",
         "date": "03/11/2022",
         "info":
         {
             "section": "js",
             "type": "course",
-            "value": "ManipulationDesObjets"
+            "value": "chapitre2"
         },
         "developer":
         {
@@ -86,14 +86,14 @@
     },
     {
         "name": "Chaine Inversee",
-        "description": "Slide N° 56 support JS",
-        "url": "supports/js/ManipulationDesObjets/ChaineInversee/index.html",
+        "description": "Chapitre 2 slide N° 56 support JS",
+        "url": "supports/js/chapitre2/ChaineInversee/index.html",
         "date": "01/11/2022",
         "info":
         {
             "section": "js",
             "type": "course",
-            "value": "ManipulationDesObjets"
+            "value": "chapitre2"
         },
         "developer":
         {
@@ -184,6 +184,23 @@
         {
             "name": "Soufiyane AIT MOULAY",
             "url": "https://github.com/AitMoulay-Soufiyane"
+        }
+    },
+    {
+        "name": "Ajouter un Employe",
+        "description": "Chapitre 4 slide N° 101 support JS",
+        "url": "supports/js/chapitre4/AjouterUnEmploye/index.html",
+        "date": "13/11/2022",
+        "info":
+        {
+            "section": "js",
+            "type": "course",
+            "value": "chapitre4"
+        },
+        "developer":
+        {
+            "name": "Hamza Ouabiba",
+            "url": "https://github.com/Hamza-ouabiba"
         }
     },
     {

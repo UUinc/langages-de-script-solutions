@@ -63,7 +63,10 @@ function LoadData(numberToShow, filterType) {
         .then((obj) => obj.json())
         .then((data) => {
             let count = 0;
+            let countType = 0;
             for (let record in data) {
+                //Calculate type count
+                if (data[record].info.value === filterType) countType++;
                 //stop laoding record
                 count++;
                 if (count > numberToShow && numberToShow > 0) return;
@@ -88,6 +91,10 @@ function LoadData(numberToShow, filterType) {
                     data[record].developer.url,
                     data[record].date
                 );
+                //Set counter
+                document.getElementById(
+                    "counter"
+                ).innerText = `${count}/${countType}`;
             }
         });
 }
@@ -141,7 +148,6 @@ function SetLanguage(_section) {
     section = _section;
     filterSelect();
 }
-
 //Set current year
 document.getElementById("footer-credit-year").innerText =
     new Date().getFullYear();

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un Employe</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css    ">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+</head>
+<body class="d-flex">
+    <div class="container w-50 sm-4">
+      <div class="container mt-5">
+        <div class="container">
+            <form>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Nom et prénom</span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" id="nomPr">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Salaire</span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="Salaire" aria-label="Username" aria-describedby="basic-addon1" id="salaire">
+                  </div>
+                  <div class="text-center">
+                    <button type="submit" class="btn btn-primary w-100 mb-1" id="ajouter">Ajouter un Employée</button>
+                    <button type="submit" class="btn btn-warning w-100" id="modifier" disabled = "false">Modifier un Employée</button>
+                  </div>
+              </form>
+        </div>
+          <div class="container mt-5">
+            <table class="table ">
+                <thead>
+                  <tr>
+                    <th scope="col">Nom et Prénom</th>
+                    <th scope="col">Salaire</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                </tbody>
+              </table>
+          </div>
+      </div>
+     </div>
+    </div>
+    <div class="container w-50">
+      <div id="info" class="container d-block w-50 mt-5">
+        
+      </div>
+    </div>
+      <script src="script.js"></script>
+</body>
+</html>
