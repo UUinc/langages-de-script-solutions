@@ -202,5 +202,22 @@
             "name": "Yahya Lazrek",
             "url": "https://github.com/UUinc"
         }
+    },
+    {
+        "name": "TP3 - Exercice 2",
+        "description": "TP3 Exercice 2 JS",
+        "url": "supports/js/TP3/Exercice2/index.html",
+        "date": "27/11/2022",
+        "info":
+        {
+            "section": "js",
+            "type": "TP",
+            "value": "TP3"
+        },
+        "developer":
+        {
+            "name": "Hamza Ouabiba",
+            "url": "https://github.com/Hamza-ouabiba"
+        }
     }
 ]
