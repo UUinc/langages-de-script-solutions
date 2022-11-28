@@ -1,0 +1,88 @@
+body
+{
+    /* center div */
+    display: flex;
+    justify-content: center;
+}
+.card
+{
+    text-align: center;
+    background-color: crimson;
+    margin: 30px;
+    height: 260px;
+    width: 350px;
+    border-radius: 15px;
+}
+
+.card-input
+{
+    margin-top: 30px;
+}
+
+#card-input-a, #card-input-b
+{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    height: 50px;
+    width: 100px;
+    color: aliceblue;
+    background-color: crimson;
+    margin: 0 5px;
+    border: 0;
+    outline: none;
+    border-radius: 2px;
+    border-bottom: 3px solid aliceblue;
+}
+#card-input-a:focus,
+#card-input-b:focus
+{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.811);
+}
+#card-input-op
+{
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    height: 50px;
+    width: 55px;
+    padding-top: 7px;
+    color: crimson;
+    background-color: aliceblue;
+    border: 0;
+    outline: none;
+    border-radius: 7px;
+}
+
+.card-operators button
+{
+    font-size: xx-large;
+    font-weight: bolder;
+    height: 50px;
+    width: 50px;
+    margin: 20px 8px;
+    color: crimson;
+    background-color: aliceblue;
+    border: 0;
+    border-radius: 8px;
+}
+.card-operators button:hover
+{
+    color: aliceblue;
+    background-color: crimson;
+    border: 4px solid aliceblue;
+}
+
+.card-result input
+{
+    font-size: xx-large;
+    font-weight: bolder;
+    text-align: center;
+    height: 50px;
+    width: 80%;
+    color: crimson;
+    background-color: aliceblue;
+    border: 0;
+    border-radius: 10px;
+}
