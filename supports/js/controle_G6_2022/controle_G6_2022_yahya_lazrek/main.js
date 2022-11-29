@@ -51,3 +51,10 @@ function Afficher() {
 }
 
 select.addEventListener("change", Afficher);
+
+//Add select list
+for (student in studentsData) {
+    var elem = document.createElement("option");
+    elem.innerText = studentsData[student].prenom;
+    select.appendChild(elem);
+}
