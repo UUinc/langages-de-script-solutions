@@ -1,0 +1,33 @@
+.image-slider
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#image
+{
+    height: 360px;
+    width: 640px;
+    border: 3px solid blueviolet;
+    border-radius: 8px;
+}
+#arrow-left, #arrow-right
+{
+    font-size: 2vw;
+    font-weight: bold;
+    height: 8vw;
+    width: 5vw;
+    margin: 0 8px;
+    color: white;
+    background-color: blueviolet;
+    border: 0;
+    border-radius: 5px;
+}
+#arrow-left:hover,
+#arrow-right:hover
+{
+    color: blueviolet;
+    background-color: white;
+    border: 3px solid blueviolet;
+    cursor: pointer;
+}
