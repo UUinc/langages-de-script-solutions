@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle G4 2022 JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="inputs">
+            <div class="largeur">
+                <label>Largeur: </label>
+                <input type="range" id="largeur" value="267" max="300">
+                <label id="valLar">267px</label>
+            </div>
+            <div class="Hauteur">
+                <label>Hauteur: </label>
+                <input type="range" id="hauteur" value="200" max="300">
+                <label id="valHau">200px</label>
+            </div>
+            <div class="Arrondi">
+                <label>Arrondi: </label>
+                <input type="range" id="arrondi" value="0" max = "50">
+                <label id="valAr">0%</label>
+            </div>
+            <div class="btn">
+                <input type="button" value="changer image" id="changer">
+            </div>
+        </div>
+        <div class="image">
+            <img src="3iirImages/etud1.png" alt="image" id="image">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

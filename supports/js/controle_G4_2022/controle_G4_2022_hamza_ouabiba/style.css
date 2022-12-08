@@ -1,0 +1,32 @@
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+}
+label{
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+input{
+    margin-bottom: 30px;
+}
+img{
+    border-radius: 0%;
+    width: 200px;
+    height: 267px;
+    border: 2px solid blue;
+}
+.btn #changer{
+    padding: 15px;
+    color: white;
+    border-radius: 10px;
+    border: 0;
+    cursor: pointer;
+    background-color: blue;
+
+}
+.btn{
+    text-align: center;
+}
