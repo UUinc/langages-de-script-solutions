@@ -172,13 +172,13 @@
     {
         "name": "Mini-Projet 2021",
         "description": "Create 'Chef Recipes' website",
-        "url": "supports/js/MiniProjets/miniprojet_2021/index.html",
+        "url": "supports/js/miniprojet_2021/miniprojet_2021/index.html",
         "date": "05/11/2022",
         "info":
         {
             "section": "js",
             "type": "exam",
-            "value": "miniprojet"
+            "value": "miniprojet_2021"
         },
         "developer":
         {
