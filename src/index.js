@@ -30,7 +30,11 @@ function addRecord(
     }
 
     //get record download url
-    const downloadUrl = recordUrl.replace("/index.html", "");
+    var downloadUrl = "";
+    if(recordUrl.includes("/index.html"))
+        downloadUrl = recordUrl.replace("/index.html", "");
+    else
+        downloadUrl = recordUrl.replace("/index.php", "");
 
     var objTo = document.getElementById("table-data");
     var record = document.createElement("tr");
