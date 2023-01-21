@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+
+:root
+{
+    --blue: rgb(26, 99, 255);
+    --lightblue: rgb(162, 189, 248);
+    --light: rgb(195, 214, 255);
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+body
+{
+    background-color: var(--lightblue);
+    border-top: 10px solid var(--blue);
+}
+
+h1
+{
+    font-weight: 300;
+    color: white;
+}
+
+.header
+{
+    width: fit-content;
+    padding: 10px 50px;
+    background-color: var(--blue);
+    border-radius: 0 0 20px 0;
+}
+
+.contact  
+{
+    display: flex;
+    justify-content: center;
+}
+.contact form
+{
+    margin-top: 25px;
+    width:60%;
+    max-width: 750px;
+}
+.contact form *
+{
+    text-align: left;
+    height: 30px;
+    width: 100%;
+    display: block;
+    background-color: var(--light);
+    border: 2px solid var(--blue);
+    border-radius: 8px;
+    margin: 10px 0;
+    padding-left: 15px;
+}
+
+textarea
+{
+    resize: vertical;
+    padding-top: 5px;
+    min-height: 200px;
+}
+
+input[type="file"]
+{
+    background-color: var(--light);
+    padding-top:10px;
+}
+
+input[type="submit"]
+{
+    font-size: larger;
+    font-weight: 900;
+    text-align: center;
+    color: var(--blue);
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    width: 150px;
+    margin: auto;
+}
+
+.sticker img
+{
+    width: 40%;
+    max-width: 512px;
+}
+.contact-data
+{
+    background-color: var(--light);
+    border-radius: 15px;
+    margin-top: 30px;
+    padding: 10px;
+}
+.contact-data > *
+{
+    text-align: left;
+    display: block;
+    margin: 15px 0;
+}

@@ -321,5 +321,50 @@
             "name": "Yahya Lazrek",
             "url": "https://github.com/UUinc"
         }
+    },
+    {
+        "name": "TP1 - Exercice 1",
+        "description": "TP1 Exercice 1 PHP",
+        "url": "supports/php/TP1/Exercice1/index.php",
+        "date": "21/01/2023",
+        "info": {
+            "section": "php",
+            "type": "TP",
+            "value": "TP1"
+        },
+        "developer": {
+            "name": "Yahya Lazrek",
+            "url": "https://github.com/UUinc"
+        }
+    },
+    {
+        "name": "TP1 - Exercice 2",
+        "description": "TP1 Exercice 2 PHP",
+        "url": "supports/php/TP1/Exercice2/index.php",
+        "date": "21/01/2023",
+        "info": {
+            "section": "php",
+            "type": "TP",
+            "value": "TP1"
+        },
+        "developer": {
+            "name": "Yahya Lazrek",
+            "url": "https://github.com/UUinc"
+        }
+    },
+    {
+        "name": "TP1 - Exercice 3",
+        "description": "TP1 Exercice 3 PHP",
+        "url": "supports/php/TP1/Exercice3/index.php",
+        "date": "21/01/2023",
+        "info": {
+            "section": "php",
+            "type": "TP",
+            "value": "TP1"
+        },
+        "developer": {
+            "name": "Yahya Lazrek",
+            "url": "https://github.com/UUinc"
+        }
     }
 ]
