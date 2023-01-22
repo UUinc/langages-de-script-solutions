@@ -25,11 +25,12 @@
                         <div class="card">
                             <!-- card header  -->
                             <div class="card-header bg-white py-2 filter">
-                                <h4 class="mb-0">Language:</h4>
+                                <h4 class="mb-0">Filter:</h4>
                                 
                                 <div class="btn-group mx-2" role="group" aria-label="Basic example">
-                                    <button type="button" class="btn btn-warning btn-sm" onclick="SetLanguage('js')">JS</button>
-                                    <button type="button" class="btn btn-secondary btn-sm" onclick="SetLanguage('php')">PHP</button>
+                                    <button type="button" class="btn btn-warning btn-sm" onclick="SetSection('js')">JS</button>
+                                    <button type="button" class="btn btn-secondary btn-sm" onclick="SetSection('php')">PHP</button>
+                                    <button type="button" class="btn btn-success btn-sm" onclick="SetSection('examens')">EXAMENS</button>
                                 </div>
                             </div>
                             <!-- card filter -->
@@ -47,7 +48,7 @@
                                         <option value="TP2">TP2</option>
                                         <option value="TP3">TP3</option>
                                     </optgroup>
-                                    <optgroup label="Exams">
+                                    <optgroup label="Controls">
                                         <option value="miniprojet_2021">Mini-Projet 2021</option>
                                         <option value="miniprojet_2022">Mini-Projet 2022</option>
                                         <option value="controle_G1_2022">Controle G1 2022</option>
@@ -55,6 +56,9 @@
                                         <option value="controle_G4_2022">Controle G4 2022</option>
                                         <option value="controle_G5_2022">Controle G5 2022</option>
                                         <option value="controle_G6_2022">Controle G6 2022</option>
+                                    </optgroup>
+                                    <optgroup label="Examens">
+                                        <option value="examen_principale_2021_2022">Examen principale 2021 - 2022</option>
                                     </optgroup>
                                 </select>
                                 

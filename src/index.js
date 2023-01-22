@@ -150,7 +150,7 @@ function Show_MoreLess() {
     showToggle = !showToggle;
 }
 
-function SetLanguage(_section) {
+function SetSection(_section) {
     section = _section;
     filterSelect();
 }

@@ -366,5 +366,20 @@
             "name": "Yahya Lazrek",
             "url": "https://github.com/UUinc"
         }
+    },
+    {
+        "name": "Examen principale 2021 - 2022",
+        "description": "Correction exercices 1 et 2, consulter PDF",
+        "url": "supports/examens/Examen_principale_2021_2022/Exercice3/index.php",
+        "date": "22/01/2023",
+        "info": {
+            "section": "examens",
+            "type": "exam",
+            "value": "examen_principale_2021_2022"
+        },
+        "developer": {
+            "name": "Yahya Lazrek",
+            "url": "https://github.com/UUinc"
+        }
     }
 ]
