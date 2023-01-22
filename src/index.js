@@ -158,12 +158,14 @@ function SetSection(_section) {
 function DataCount(filterType) {
     let count = 0;
     for (let record in Data) {
+        if(Data[record].info.section !== section) continue;
         count++;
 
         if (filterType === undefined || filterType === "none") continue;
         if (Data[record].info.value !== filterType && filterType !== "none") {
             count--;
         }
+        
     }
     return count;
 }
