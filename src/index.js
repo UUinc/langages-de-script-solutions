@@ -152,6 +152,11 @@ function Show_MoreLess() {
 
 function SetSection(_section) {
     section = _section;
+
+    //change filter to default
+    const select = document.getElementById("card-filter-select");
+    select.value = "none";
+
     filterSelect();
 }
 
