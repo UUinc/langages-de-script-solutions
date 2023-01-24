@@ -106,9 +106,16 @@ function ShowData(numberToShow, filterType) {
 }
 
 function filterSelect() {
-    const option = document.getElementById("card-filter-select").value;
+    let option = document.getElementById("card-filter-select").value;
     const filterBTN = document.getElementById("card-filter-btn");
     var url = "";
+
+    //check if section is examen
+    const tmp = option;
+    if(GetSection(option) === "examens"){
+        SetSection("examens");
+    }
+    option = tmp;
 
     //Download or show support
     if (option === "none") {
@@ -181,6 +188,18 @@ function DataCount(filterType) {
         
     }
     return count;
+}
+
+//Get from value the section
+function GetSection(value)
+{
+    for (let record in Data) {
+        if(Data[record].info.value === value)
+        {
+            return Data[record].info.section;
+        }
+    }
+    return "js";
 }
 
 //Set current year
