@@ -153,6 +153,14 @@ function Show_MoreLess() {
 function SetSection(_section) {
     section = _section;
 
+    //reset dot
+    document.getElementById("dot_js").innerText = "";
+    document.getElementById("dot_php").innerText = "";
+    document.getElementById("dot_examens").innerText = "";
+    //change dot
+    const dotId = "dot_"+_section;
+    document.getElementById(dotId).innerText = "•";
+
     //change filter to default
     const select = document.getElementById("card-filter-select");
     select.value = "none";
