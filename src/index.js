@@ -106,16 +106,19 @@ function ShowData(numberToShow, filterType) {
 }
 
 function filterSelect() {
-    let option = document.getElementById("card-filter-select").value;
+    const select =  document.getElementById("card-filter-select");
+    let option = select.value;
     const filterBTN = document.getElementById("card-filter-btn");
     var url = "";
 
     //check if section is examen
     const tmp = option;
+    const tmpIndex = select.selectedIndex;
     if(GetSection(option) === "examens"){
         SetSection("examens");
     }
     option = tmp;
+    select.selectedIndex = tmpIndex;
 
     //Download or show support
     if (option === "none") {
