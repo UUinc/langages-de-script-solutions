@@ -40,6 +40,11 @@
 {
     width: 35px;
 }
+.card-header
+{
+    display: flex;
+    justify-content: space-between;
+}
 .card-filter
 {
     display: flex;
