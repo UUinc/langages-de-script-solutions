@@ -381,5 +381,20 @@
             "name": "Yahya Lazrek",
             "url": "https://github.com/UUinc"
         }
+    },
+    {
+        "name": "Examen rattrapage 2021 - 2022",
+        "description": "Correction QCM, consulter PDF",
+        "url": "supports/examens/Examen_rattrapage_2021_2022/Part2_3/index.php",
+        "date": "22/01/2023",
+        "info": {
+            "section": "examens",
+            "type": "exam",
+            "value": "Examen_rattrapage_2021_2022"
+        },
+        "developer": {
+            "name": "Yahya Lazrek",
+            "url": "https://github.com/UUinc"
+        }
     }
 ]
