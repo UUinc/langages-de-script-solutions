@@ -60,14 +60,38 @@ add.addEventListener('click',(e) => {
             };
             employes.push(person);
             //ajouter au DOM : 
-            let html = `
-                <tr id=${id}>
-                    <td scope="row">${nomEm}</td>
-                    <td>${salaire}</td>
-                    <td><i name='info' class="fa cursor-pointer bg-info rounded p-1 fa-info-circle text-dark"></i><i name='edit' class="fa m-1 bg-primary text-white p-1 rounded fa-edit "></i><i name='delete' class="fa bg-danger p-1 rounded text-white fa-trash text-dark"></i></td>
-                </tr>
-             ` 
-            tableEm.innerHTML += html;
+            let tr = document.createElement('tr');
+            let td1 = document.createElement('td');
+            let td2 = document.createElement('td');
+            let td3 = document.createElement('td');
+            let iconInfo = document.createElement('i');
+            let inconSuppr = document.createElement('i');
+            let iconModifier  =document.createElement('i');
+            iconModifier.className = "fa m-1 bg-primary text-white p-1 rounded fa-edit";
+            iconInfo.name = "info";
+            iconInfo.className = "fa cursor-pointer bg-info rounded p-1 fa-info-circle text-dark";
+            tr.id = id;
+            iconModifier.setAttribute('name','edit');
+            iconInfo.setAttribute('name','info');
+            inconSuppr.className = "fa bg-danger p-1 rounded text-white fa-trash text-dark";
+            inconSuppr.setAttribute('name','delete');
+            td1.textContent = salaire;
+            td2.textContent = nomEm;
+            td3.appendChild(iconInfo);
+            td3.appendChild(iconModifier);
+            td3.appendChild(inconSuppr);
+            tr.appendChild(td1);
+            tr.appendChild(td2);
+            tr.appendChild(td3);
+            tableEm.appendChild(tr);
+            // let html = `
+            //     <tr id=${id}>
+            //         <td scope="row">${nomEm}</td>
+            //         <td>${salaire}</td>
+            //         <td></td>
+            //     </tr>
+            //  ` 
+            // tableEm.appendChild(tr) += html;
             // tableEm.parentElement.
         }
     }
