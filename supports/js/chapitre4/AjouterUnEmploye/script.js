@@ -75,8 +75,8 @@ add.addEventListener('click',(e) => {
             iconInfo.setAttribute('name','info');
             inconSuppr.className = "fa bg-danger p-1 rounded text-white fa-trash text-dark";
             inconSuppr.setAttribute('name','delete');
-            td1.textContent = salaire;
-            td2.textContent = nomEm;
+            td1.textContent = nomEm;
+            td2.textContent = salaire;
             td3.appendChild(iconInfo);
             td3.appendChild(iconModifier);
             td3.appendChild(inconSuppr);
